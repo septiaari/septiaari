@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+* {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --putih: #ffffff;
+  --abu: #f5f7f8;
+  --abu-muda: #efefef;
+  --abu-gelap: #818182;
+  --hitam: #000000;
+  --hitam-muda: #555555;
+  --hitam-gelap: #1b1d1c;
+  --garis: #dddddd;
+  --utama: #e4dacd;
+  --kedua: #45390f;
+  --border-radius: 18px;
+}
+html {
+  word-break: break-word;
+}
+body {
+  background-image: url("../upload/background.jpg");
+  background-size: cover;
+  color: var(--hitam);
+}
+a:link, a:visited, a:active {
+  text-decoration: none;
+  outline: none;
+  color: var(--hitam);
+}
+p {
+  margin-bottom: 10px;
+}
+img {
+  width: 100%;
+}
+svg {
+  max-width: 100%;
+}
+textarea {
+  resize: vertical;
+}
+input[type=text], textarea {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 13.2px;
+  outline: none;
+  line-height: 1.4;
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0px;
+}
+.seth {
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+  position: absolute;
+  width: 0% !important;
+}
+.fixBody {
+  overflow: hidden;
+}
+.kontenPopup {
+  background-image: url("../upload/background.jpg");
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.konten404 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+}
+.konten404 a {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+.konten {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.kontenPembukaan {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  user-select: none;
+}
+.ipembukaan1 svg {
+  max-width: 60px;
+  height: auto;
+}
+.ipembukaan2 {
+  font-family: 'Playball', cursive;
+  font-size: 42px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.ipembukaan3 {
+  font-size: 15px;
+  margin: 15px 0px;
+}
+.ipembukaan4 {
+  border-bottom: 1px solid var(--hitam);
+  display: inline-block;
+  font-size: 15px;
+  font-style: italic;
+  margin: 8px 0px 15px 0px;
+}
+.ipembukaan5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tombolPembukaan {
+  background: var(--hitam);
+  border-radius: var(--border-radius);
+  color: var(--putih) !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  text-align: center;
+  user-select: none;
+}
+.tombolPembukaan:hover {
+  background: var(--hitam-muda);
+}
+.kontenIntro {
+  align-content: center;
+  display: grid;
+  text-align: center;
+  min-height: calc(100vh - 20px);
+  padding: 10px;
+}
+.itemIntro1 svg {
+  max-width: 60px;
+  height: auto;
+}
+.itemIntro2 {
+  font-family: 'Playball', cursive;
+  font-size: 28px;
+  font-weight: 600;
+}
+.itemIntro3 {
+  font-family: 'Playball', cursive;
+  font-size: 42px;
+  font-weight: 600;
+}
+.itemIntro4 {
+  margin-bottom: 90px;
+}
+.itemIntro5 svg {
+  stroke-width: 2;
+  stroke: var(--abu-gelap);
+  width: 14px;
+  height: 14px;
+}
+.itemIntro5 p {
+  color: var(--abu-gelap);
+  font-size: 13px;
+}
+.kontenSurat {
+  align-content: center;
+  background-color: rgb(169 169 169 / 15%);
+  border: 1px solid var(--garis);
+  border-radius: 32px;
+  display: grid;
+  text-align: center;
+  margin: 10px;
+  padding: 40px 10px 30px 10px;
+}
+.itemSurat1 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.kontenProfil {
+  align-content: center;
+  display: grid;
+  text-align: center;
+  padding: 10px;
+  margin: 60px 0px;
+}
+.itemProfil1 img {
+  border: 3px solid var(--garis);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.itemProfil2 {
+  font-family: 'Playball', cursive;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.itemProfil3 a {
+  color: var(--abu-gelap);
+  font-size: 14px;
+}
+.itemProfil3 a:hover {
+  color: var(--hitam);
+}
+.itemProfil3 svg {
+  fill: var(--abu-gelap);
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+.itemProfil3 a:hover svg {
+  fill: var(--hitam);
+}
+.itemProfil4{
+  font-family: 'Playball', cursive;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 40px 0px;
+}
+.kontenWaktu {
+  text-align: center;
+  padding: 10px;
+}
+.kontenWaktu span {
+  display: inline-block;
+  padding: 10px;
+  width: 50px;
+}
+.kontenWaktu span div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.itemWaktu1 {
+  font-family: 'Playball', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.kontenDetail {
+  text-align: center;
+  padding: 10px;
+}
+.itemDetail1 {
+  margin: 60px 0px;
+}
+.itemDetail2 {
+  font-family: 'Playball', cursive;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+.itemDetail3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.itemDetail4 {
+  margin-bottom: 5px;
+}
+.itemDetail5 {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.itemDetail6 {
+  background: var(--hitam);
+  border-radius: var(--border-radius);
+  color: var(--putih) !important;
+  font-size: 14px;
+  padding: 8px 12px;
+  text-align: center;
+  user-select: none;
+}
+.itemDetail6:hover {
+  background: var(--hitam-muda);
+}
+.itemDetail6 svg {
+  width: 16px;
+  height: 16px;
+  padding-right: 6px;
+  vertical-align: -2px;
+}
+.kontenUcapan {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.kontenUcapan p {
+  font-size: 14px;
+}
+.kontenCard {
+  padding: 20px;
+}
+.itemCard1 {
+  background-image: linear-gradient(to right top, var(--hitam-gelap), var(--hitam-muda));
+  border-radius: var(--border-radius);
+  margin: 20px 0px;
+  padding: 10px 15px;
+}
+.itemCard2 {
+  color: var(--putih);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+}
+.itemCard3 {
+  color: var(--putih);
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 5px;
+  margin: 5px 0px 20px 0px;
+}
+.itemCard3 span {
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: normal;
+  margin-left: 5px;
+}
+.itemCard3 span:hover svg {
+  stroke: var(--hitam);
+}
+.itemCard3 svg {
+  stroke: var(--putih);
+  width: 16px;
+  height: 16px;
+  vertical-align: 2px;
+}
+.itemCard4 {
+  color: var(--putih);
+  text-align: right;
+}
+.itemCard5 {
+  margin-top: 10px;
+}
+.itemCard5 svg {
+  width: 40px;
+  height: 40px;
+}
+.kontenForm {
+  padding: 30px 20px;
+}
+.itemForm1 {
+  font-weight: 600;
+  text-align: center;
+}
+.itemForm2 {
+  font-size: 14px;
+  text-align: center;
+}
+.itemForm3 {
+  text-align: right;
+}
+.kontenListKehadiran {
+  padding: 20px;
+}
+.itemListKehadiran1 {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.itemListKehadiran1::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.itemListKehadiran1::-webkit-scrollbar-thumb {
+  background: var(--garis);
+  border-radius: 10px;
+}
+.itemListKehadiran1::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.itemListKehadiran2 {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.itemListKehadiran3 {
+  border-bottom: 1px dashed var(--hitam-muda);
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  white-space: pre-line;
+}
+.footer {
+  font-family: 'Playball', cursive;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 30px 30px 50px 30px;
+  text-align: center;
+}
+.kontenSalju {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  margin-bottom: -100vh;
+}
+.itemSalju > li {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  background-color: var(--abu-gelap);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -webkit-animation-name: salju-turun;
+          animation-name: salju-turun;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.itemSalju > li:nth-child(1) {
+  left: 65%;
+  width: 4px;
+  height: 4px;
+  -webkit-animation-duration: 8289ms;
+          animation-duration: 8289ms;
+  -webkit-animation-delay: 4618ms;
+          animation-delay: 4618ms;
+  filter: blur(4px);
+}
+.itemSalju > li:nth-child(2) {
+  left: 41%;
+  width: 7px;
+  height: 7px;
+  -webkit-animation-duration: 9163ms;
+          animation-duration: 9163ms;
+  -webkit-animation-delay: 3764ms;
+          animation-delay: 3764ms;
+  filter: blur(1px);
+}
+.itemSalju > li:nth-child(3) {
+  left: 28%;
+  width: 1px;
+  height: 1px;
+  -webkit-animation-duration: 8489ms;
+          animation-duration: 8489ms;
+  -webkit-animation-delay: 525ms;
+          animation-delay: 525ms;
+  filter: blur(2px);
+}
+.itemSalju > li:nth-child(4) {
+  left: 80%;
+  width: 18px;
+  height: 18px;
+  -webkit-animation-duration: 5538ms;
+          animation-duration: 5538ms;
+  -webkit-animation-delay: 441ms;
+          animation-delay: 441ms;
+  filter: blur(1px);
+}
+.itemSalju > li:nth-child(5) {
+  left: 82%;
+  width: 2px;
+  height: 2px;
+  -webkit-animation-duration: 9409ms;
+          animation-duration: 9409ms;
+  -webkit-animation-delay: 3409ms;
+          animation-delay: 3409ms;
+  filter: blur(0px);
+}
+.itemSalju > li:nth-child(6) {
+  left: 10%;
+  width: 0px;
+  height: 0px;
+  -webkit-animation-duration: 11918ms;
+          animation-duration: 11918ms;
+  -webkit-animation-delay: 4304ms;
+          animation-delay: 4304ms;
+  filter: blur(1px);
+}
+.itemSalju > li:nth-child(7) {
+  left: 27%;
+  width: 4px;
+  height: 4px;
+  -webkit-animation-duration: 7100ms;
+          animation-duration: 7100ms;
+  -webkit-animation-delay: 3502ms;
+          animation-delay: 3502ms;
+  filter: blur(2px);
+}
+.itemSalju > li:nth-child(8) {
+  left: 80%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-duration: 13124ms;
+          animation-duration: 13124ms;
+  -webkit-animation-delay: 4862ms;
+          animation-delay: 4862ms;
+  filter: blur(2px);
+}
+.itemSalju > li:nth-child(9) {
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-duration: 5280ms;
+          animation-duration: 5280ms;
+  -webkit-animation-delay: 3649ms;
+          animation-delay: 3649ms;
+  filter: blur(1px);
+}
+.itemSalju > li:nth-child(10) {
+  left: 95%;
+  width: 1px;
+  height: 1px;
+  -webkit-animation-duration: 13068ms;
+          animation-duration: 13068ms;
+  -webkit-animation-delay: 2156ms;
+          animation-delay: 2156ms;
+  filter: blur(2px);
+}
+
+@-webkit-keyframes salju-turun {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 15px;
+  }
+  20% {
+    margin-left: 20px;
+  }
+  25% {
+    transform: translate(0, 166.6666666667px);
+    opacity: 0.75;
+  }
+  30% {
+    margin-left: 15px;
+  }
+  40% {
+    margin-left: 0;
+  }
+  50% {
+    transform: translate(0, 333.3333333333px);
+    opacity: 1;
+    margin-left: -15px;
+  }
+  60% {
+    margin-left: -20px;
+  }
+  70% {
+    margin-left: -15px;
+  }
+  75% {
+    transform: translate(0, 500px);
+    opacity: 0.5;
+  }
+  80% {
+    margin-left: 0;
+  }
+  100% {
+    transform: translate(0, 666.6666666667px);
+    opacity: 0;
+  }
+}
+
+@keyframes salju-turun {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+    margin-left: 0;
+  }
+  10% {
+    margin-left: 15px;
+  }
+  20% {
+    margin-left: 20px;
+  }
+  25% {
+    transform: translate(0, 166.6666666667px);
+    opacity: 0.75;
+  }
+  30% {
+    margin-left: 15px;
+  }
+  40% {
+    margin-left: 0;
+  }
+  50% {
+    transform: translate(0, 333.3333333333px);
+    opacity: 1;
+    margin-left: -15px;
+  }
+  60% {
+    margin-left: -20px;
+  }
+  70% {
+    margin-left: -15px;
+  }
+  75% {
+    transform: translate(0, 500px);
+    opacity: 0.5;
+  }
+  80% {
+    margin-left: 0;
+  }
+  100% {
+    transform: translate(0, 666.6666666667px);
+    opacity: 0;
+  }
+}
