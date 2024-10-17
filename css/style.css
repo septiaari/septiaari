@@ -421,8 +421,7 @@ input[type=text], textarea {
 .tombolMusik svg {
   stroke: var(--putih);
   width: 20px;
-  height: 20px;
-  vertical-align: -3px;
+  height: 24px;
 }
 .footer {
   font-family: 'Playball', cursive;
