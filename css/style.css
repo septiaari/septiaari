@@ -362,7 +362,7 @@ input[type=text], textarea {
   height: 40px;
 }
 .kontenForm {
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 .itemForm1 {
   font-weight: 600;
@@ -374,6 +374,10 @@ input[type=text], textarea {
 }
 .itemForm3 {
   text-align: right;
+}
+.notifForm {
+  font-size: 14px;
+  font-style: italic;
 }
 .kontenListKehadiran {
   padding: 20px;
