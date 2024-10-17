@@ -206,7 +206,7 @@ input[type=text], textarea {
   display: grid;
   text-align: center;
   padding: 10px;
-  margin: 60px 0px;
+  margin: 90px 0px;
 }
 .itemProfil1 img {
   border: 3px solid var(--garis);
@@ -404,6 +404,25 @@ input[type=text], textarea {
   margin-bottom: 15px;
   padding-bottom: 15px;
   white-space: pre-line;
+}
+.tombolMusik {
+  background: var(--hitam);
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 12px;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+}
+.tombolMusik svg {
+  stroke: var(--putih);
+  width: 20px;
+  height: 20px;
+  vertical-align: -3px;
 }
 .footer {
   font-family: 'Playball', cursive;
