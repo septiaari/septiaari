@@ -280,7 +280,7 @@
 
 		function kirimKehadiran() {
 			waktu = new Date();
-			tanggal = waktu.getFullYear()+"-"+waktu.getMonth()+"-"+waktu.getDate()+" "+waktu.getHours()+":"+waktu.getMinutes()+":"+waktu.getSeconds();
+			tanggal = waktu.getFullYear()+"-"+(waktu.getMonth() + 1)+"-"+waktu.getDate()+" "+waktu.getHours()+":"+waktu.getMinutes()+":"+waktu.getSeconds();
 
 			vNamaKehadiran = namaKehadiran.value.trim();
 			vPesanKehadiran = pesanKehadiran.value.trim();
